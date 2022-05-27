@@ -1,0 +1,39 @@
+I.	Tạo đồ án
+	1.  Tạo thư mục chứa solution và project (api - thư mục chứa tất cả)
+    2.  Tạo 1 solution tại thư mục MVC_Movie: ClockStoreWeb\api> dotnet new sln
+    3.  Tạo project: ClockStoreWeb\api> dotnet new webapi -o StoreApi
+    4.  ClockStoreWeb\api> dotnet sln add StoreApi 
+    5.  dotnet add package Microsoft.EntityFrameworkCore
+    6.  dotnet add package Microsoft.EntityFrameworkCore.Design
+    7.  dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+    8.  dotnet add package BCrypt.Net-Next
+    9.  dotnet add package System.IdentityModel.Tokens.Jwt
+    10. dotnet add package Microsoft.AspNetCore.Cors
+    11. dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson
+ 
+II. Cấu hình thư mục 
+    1.  Tạo thư mục Models
+    2.  Tạo thư mục wwwroot
+    3.  Tạo thư mục DTOs
+    4.  Tạo thư mục Interfaces
+    5.  Tạo thư mục Repositories
+
+III.Tiếp theo : Cách tạo 1 table và database
+    1.  Thiết lập kết nối database tại appsettings.json (trước đó tạo database trong sqlserver)
+        "ConnectionStrings": {
+            "DefaultConnection": "Data Source=DESKTOP-06LRG85\\SQLEXPRESS; Initial Catalog=CLOCKSTOREWEB;Integrated Security=true; uid=sa; password=1234567890"
+        }
+    2.  Tạo ClockStoreDBContext tại Repositories
+    2.  Startup
+    3.  Tạo Model KieuDay
+    4.  public DbSet<KieuDay> KieuDays { get; set; } tại ClockStoreDBContext
+    5.  Tại Startup.cs tạo kết nối với database để khi chạy có thể kết nối
+        services.AddDbContext<ClockStoreDBContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+    6.  Tạo database bằng migrations (Xóa thì: dotnet ef migrations remove)
+        dotnet ef migrations add CreateKieuDaysTable
+    7.  dotnet ef database update  để update database cho sqlserver
+    8.  Tương tự cho các Model còn lại (cái nào đã làm rồi thì không làm nữa)
+
+
+

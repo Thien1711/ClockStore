@@ -1,0 +1,15 @@
+.owl-carousel-home {
+    display: block!important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hoverNone {
+    color: black;
+}
+
+.hoverNone:hover{
+    color: blue;
+}

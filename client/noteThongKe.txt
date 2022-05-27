@@ -1,0 +1,20 @@
+1.	Thống kê sản phẩm bán ra
+	- Dạng table
+		+ id
+		+ tên
+		+ số lượng
+		+ giá bán
+		+ thành tiền
+	- Search từ ngày này đến ngày khác
+2.	Thống kê doanh thu
+	- Dạng biểu đồ cột:
+		+ tháng 1: doanh thu bao nhiêu
+		+ tháng 2: doanh thu bao nhiêu
+	- Search từ ngày này đến ngày khác
+
+3.	Thống kê số lượng đơn hàng
+	- Dạng biểu đồ cột:
+		+ tháng 1: bao nhiêu đơn hàng
+		+ tháng 2: bao nhiêu đơn hàng
+	- Search từ ngày này đến ngày khác
+

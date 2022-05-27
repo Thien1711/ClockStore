@@ -1,0 +1,9 @@
+
+.category-scroll {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.filter-catagories li a:hover {
+    color: black!important;
+}

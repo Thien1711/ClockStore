@@ -1,0 +1,8 @@
+
+.table-import-goods-action {
+    /* height: 30vh; */
+    min-height: 30vh;
+    max-height: 70vh;
+    /* position: fixed; */
+    overflow: auto;
+}

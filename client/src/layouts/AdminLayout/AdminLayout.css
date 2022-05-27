@@ -1,0 +1,149 @@
+body{
+  background-color: #eef9fc!important;
+}
+
+/* Phần menu mobile */
+
+#accordianId {
+  display: none;
+}
+
+.card {
+  background-color: #333;
+  color: antiquewhite;
+}
+
+.navbar-brand {
+  background-color: #333;
+  color: antiquewhite !important;
+}
+
+.card-body {
+  height: 50% !important;
+}
+
+.text-link {
+  color: #9d9d9d;
+}
+
+.card-body:hover {
+  background-color: rgb(24, 24, 24);
+}
+
+.card-body-active {
+  background-color: rgb(24, 24, 24);
+}
+
+.btn-collapse {
+  float: right;
+}
+
+/* Phần menu destop */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #c4e9d6;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+}
+
+.sidebar h3 {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.sidebar a.active {
+  background-color: #337ab7;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  /* height: 100vh; */
+  height: unset;
+  min-height: 100vh;
+  width: fit-content;
+  min-width: 80vw;
+  background-color: #eef9fc;;
+}
+/* Phần media */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 0px) and (max-width: 575.98px) {
+  #accordianId {
+    display: block;
+  }
+  .sidebar {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #accordianId {
+    display: block;
+  }
+  .sidebar {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+
+.class-phan-trang {
+  text-align: center;
+}
+
+.layout-admin {
+  background-color: #eef9fc;
+}
+
+.note-validate {
+  color: red;
+}

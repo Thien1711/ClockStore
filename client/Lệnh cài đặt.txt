@@ -1,0 +1,14 @@
+1.  npx create-react-app client
+2.  "start": "SET PORT=4200 && react-scripts start" tại package.json
+3.  npm install redux react-redux react-router react-router-dom --save
+4.  npm install @popperjs/core
+5.  npm install --save react-toastify
+6.  npm install redux-thunk --save
+7.  npm install axios --save
+8.  npm install js-cookie --save
+9.  npm i react-router-dom @types/react-router-dom
+10. npm i --save lodash
+11. npm install react-dropdown  --save  : ko cài
+12. npm i @popperjs/core : ko cài
+13. npm install react-bootstrap --save
+14. npm install react-chartjs-2 chart.js --save
